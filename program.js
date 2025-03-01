@@ -20,6 +20,21 @@ async function loadPolygon(){
 }
 
 loadPolygon();
+async function loadPoint(){
+
+    let myData2 = await fetch('arboles_timiza.geojson')
+    let myPoint = await myData2.json();
+    
+    L.geoJSON(myPoint,
+        {
+            style:{
+                color: 'blue'
+            }
+        }
+    ).addTo(map);
+}
+
+loadPoint();
 
 let btnTrees = document.getElementById('btnTrees');
 
