@@ -1,8 +1,18 @@
-#map { height: 100%; }
+#map { height: 90%; }
 
 #buttonContainer{
-    position: relative;
+    position: absolute;
     top: 10px;
     left: 100px;
     z-index: 1000;
+}
+
+.buttons{
+
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 140px;
+    font-size: 25px;
+
 }
